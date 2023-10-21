@@ -1,0 +1,172 @@
+:root {
+    --color-1: linear-gradient(266deg, #9832FF -2.57%, #B03DCC 23.41%, rgba(158, 54, 135, 0.76) 42.3%, #A338ED 82.5%, #3835EE 110.71%);
+    --color-2:rgba(132, 132, 132, 0.40);
+    --color-3:#B97BF8;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.589);
+    --enhanced-glow-color: rgba(231, 206, 255, 0.377);
+    --btn-color: rgb(100, 61, 136);
+}
+
+body {
+    background-image: url('img-1.jpg');
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, rgb(244, 36, 219) -2.3%, rgb(100, 7, 162) 44.4%, rgb(79, 32, 218) 103.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.email-control .password-control{
+    display: contents;
+    justify-content: space-between;
+    width: 412px;
+    height: 40px;
+}
+input{
+    display: block;
+    padding: 5px;
+    width: 412px;
+    height: 50px;
+    color: white;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-inline: 1em;
+    padding-block: 0.7em;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: none;
+    margin: 0 auto;
+}
+
+input:focus{
+    transition: 0.3s;
+    outline: solid 3px #B03DCC;
+}
+
+label{
+    display: block;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.password-control{
+    margin-top: 20px;
+}
+.forgot-passw {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.forgot-passw a{
+    color: white;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: bold;
+}
+button{
+    display: block;
+    width: 412px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 40px;
+    border: none;
+}
+
+.login-bt button{
+    background-color: var(--color-3);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-bt button:hover{
+    transition: 0.5s;
+    background-color: var(--glow-color);
+    box-shadow:  0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    color: black;
+    border: rgb(217, 176, 255) solid 2px;
+}
+
+.apple-bt button{
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.apple-bt button:hover{
+    border: rgb(0, 0, 0) solid 2px;
+    transition: 0.5s;
+    box-shadow: 2px 5px 10px #ffffff;
+}
+
+.gg-bt button{
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gg-bt button:hover{
+    border: black solid 2px;
+    transition: 0.5s;
+    box-shadow: 2px 5px 10px #000000;
+}
+.heading-2{
+    margin: 5px;
+    color: whitesmoke;
+}
+.bi{
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+.bi-google{
+    align-items: center;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 767.98px){
+    input{
+        max-width: 350px;
+    }
+    
+    button{
+        max-width: 350px;
+    }
+
+    .container{
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 768) and (max-width:1023.98px){}   
